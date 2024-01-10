@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta description -->
+
+    <meta data-id="site_name" property="og:site_name" content="http://www.adbanao.com/blog-details/<%= unique_url %>">
+    <meta name="language" content="en">
+
+      <!-- Meta Keyword-->
+      <meta class="blog_metatag" name="keywords" content="<%= blog_meta_tags %>">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta  property="og:site_name" content="http://www.adbanao.com/" /> <!-- website name -->
+    <meta  property="og:site" content="http://www.adbanao.com/blog-details/<%= unique_url %>" /> <!-- website link -->
+    <meta  property="og:title" content="<%= title %>" /> <!-- title shown in the actual shared post -->
+    <meta  property="og:description" name="description"
+        content="<%= meta_dec %>" />
+    <!-- description shown in the actual shared post -->
+
+    <meta property="og:keywords" name="keywords" content="<%= blog_meta_tags %>"/>
+    <!-- image link, make sure it's jpg -->
+    <meta name="author" content="Accucia Softwares Pvt. Ltd.">
+    <meta data-id="image" property="og:image" content="<%= canonical_img %>">
+    <link rel="canonical" href="<%= canonical_img %>">
+    <meta property="og:url" content="<%= process.env.BASE_URL %>/blog-details/<%= unique_url %>" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+    <%- include ./layouts/partials/meta.ejs %>
+
+    <!--title-->
+    <title class="main_title">
+        <%= title %>
+    </title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="./assets/images/logo/favicon.png" type="image/png" sizes="16x16">
+
+    <!--custom css-->
+    <%- include ./layouts/partials/styles.ejs %>
+        <link rel="stylesheet" href="/css/blog_list.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <!-- for google analytics -->
+    <%- include ./layouts/partials/google-analytics.ejs %>
+</head>
+<style>
+    .blog_main_banner_div {
+        width: inherit;
+        position: relative;
+    }
+
+    .blog_main_banner img {
+        width: 100%;
+        height: inherit;
+        border-radius: 8px;
+    }
+
+    .black_button {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .dropdown-menu.show{
+    padding: 0px !important;
+}
+    .black_button button {
+        background-color: #e0a800;
+        border-radius: 4px;
+        border: unset;
+        color: #FFF;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #renderblogs {
+        background: #FFFFFF;
+        box-shadow: 0px -2px 4px rgba(195, 195, 195, 0.25), 0px 4px 4px rgba(195, 195, 195, 0.25);
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .blog_details {
+        padding: 3em 3em 2em 3em;
+    }
+
+    .showdropdown {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        bottom: -16px;
+    }
+
+    .blog_date {
+        color: #e0a800;
+        font-weight: 600;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .shareButtoncontainer {
+        position: relative;
+
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+    }
+
+    .sharebutton::after {
+        display: none;
+    }
+
+    .sharebutton {
+        background: #FFFFFF;
+        box-shadow: 0px -2px 4px rgba(195, 195, 195, 0.25), 0px 4px 4px rgba(195, 195, 195, 0.25);
+        border-radius: 6px;
+        padding: 10px 10px 10px 0px;
+        font-family: Calibri, sans-serif !important;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffcd39;
+        cursor: pointer;
+    }
+
+    .sharebutton span {
+        background: #ffcd39;
+        box-shadow: 0px -2px 4px rgba(195, 195, 195, 0.25), 0px 4px 4px rgba(195, 195, 195, 0.25);
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .shareDropdown {
+        overflow: unset !important;
+        background: #FFFFFF;
+        box-shadow: 0px -2px 4px rgba(195, 195, 195, 0.25), 0px 2px 4px rgba(195, 195, 195, 0.25);
+        border-radius: 4px;
+        padding: 1.5rem 0;
+        border: none;
+        z-index: 900;
+    }
+
+    .fa-share-alt:before {
+        color: #fff;
+    }
+
+    .share-item {
+        display: flex;
+        gap: 10px;
+    }
+
+    .blog_main_banner {
+        height: auto;
+    }
+
+    .main_blog_container {
+        margin-top: 6.5rem;
+    }
+    .blogDetails strong{
+        font-weight: 700 !important;
+        color: #000;
+    }
+    .blogDetails p{
+        color: #000 !important;
+    }
+    @media screen and (max-width: 450px){
+        .blog_main_banner{
+            height: 200px;
+        }
+        .owl-carousel .owl-stage-outer{
+            margin-bottom: unset;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Pre-loader start -->
+    <%- include ./layouts/partials/pre-loader.ejs %>
+        <!-- Pre-loader end -->
+
+        <!-- header start -->
+        <header class="header">
+            <%- include ./layouts/partials/navbar.ejs %>
+        </header>
+
+        <!-- header end -->
+        <div class="main_blog_container ">
+            <div class="container blog_container">
+                <div id="renderblogs">
+
+
+                </div>
+            </div>
+
+        </div>
+        <section>
+            <div class="container mt-5 " style="margin-bottom: 3em;">
+                <div class="row" style="justify-content: center;">
+                    <h1 class="text-center fw-bold display-6 mt-4 mb-5">Featured Blog</h1>
+                    <div class="owl-carousel owl-theme" id="blogCarasoul"></div>
+                </div>
+            </div>
+        </section>
+        <!-- <script src="/js/popper.min.js"></script>
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script> -->
+        <!-- footer section start -->
+        <%- include ./layouts/partials/footer.ejs %>
+            <!-- footer section end -->
+
+
+            <!-- script start -->
+            <%- include ./layouts/partials/scripts.ejs %>
+                <!-- script end -->
+                <script>
+                    unique_url = "<%=blog_url%>";
+                </script>
+                <script src="../assets/js/blog_details.js"></script>
+               <script src="/js/moment.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+.gradient-brand-color {
+    background: rgb(255, 193, 7);
+    background: -moz-linear-gradient(162deg, rgba(255, 193, 7, 1) 28%, rgba(255, 193, 7, 0.8155637254901961) 61%);
+    background: -webkit-linear-gradient(162deg, rgba(255, 193, 7, 1) 28%, rgba(255, 193, 7, 0.8155637254901961) 61%);
+    background: linear-gradient(162deg, rgba(255, 193, 7, 1) 28%, rgba(255, 193, 7, 0.8155637254901961) 61%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc107", endColorstr="#ffc107", GradientType=1);
+    color: #fff;
+}
+
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+
+.contact-info__list span.position-absolute {
+    left: 0;
+}
+
+.z-index-101 {
+    z-index: 101;
+}
+
+.list-style--none {
+    list-style: none;
+}
+
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 3rem !important
+    }
+}
+
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132, 138, 163, 0.1) !important;
+}
+.social-list a{
+    color: #fff;
+}
+.contact-us-btn{
+    font-size: 16px;
+    padding: 4px 34px;
+    font-weight: 700;
+    
+}
+.error{
+    color: red;
+}
+.btn-flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.link--right-icon{
+    transition :padding 0.8s ease-out;
+}
+.hoverIcon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    transition :all 0.8s ease-out;
+}
+.hoverIcon:hover{
+    color: #005368;
+    gap: 15px;
+}
+.link--right-icon:hover{
+color: rgb(109, 106, 106);
+}
+/* .link__icon{
+    transition: width 0.3s ease-in-out 0.2s;
+}
+.link__icon:hover{
+    width: 200px;
+} */
+.link--right-icon{
+    color: #000;
+    font-weight: 600;
+    transition: all 2s;
+}
+.address-head{
+    font-weight: 600;
+    font-size: 18px;
+}
+.address-text{
+    font-weight: 500;
+    font-size: 16px;
+}
+.fa-envelope-o,
+.fa-phone,
+.fa-map-marker{
+    font-size: 20px;
+    font-weight: 600;
+}

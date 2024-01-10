@@ -1,0 +1,566 @@
+.quotes_main_div {
+    padding-top: 5em;
+    background: linear-gradient(180deg, rgba(253, 235, 4, 1) 18%, rgb(255, 255, 255) 75%);
+}
+
+.quotes_hero_silder_1 {
+    background: rgb(253, 235, 4);
+    background: linear-gradient(180deg, rgba(253, 235, 4, 1) 18%, rgba(255, 201, 1, 1) 75%);
+}
+
+.quotes_hero_silder_2 {
+    background-color: #FFFDE8
+}
+
+.quotes-hero-life {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.quotes_hero_slider {
+    overflow: hidden;
+    height: 550px;
+}
+
+.quotes-hero-life h1 {
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 700;
+    font-size: 42px;
+    margin: 0;
+}
+
+.quotes-hero-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2em;
+}
+
+.quotes-hero-list-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.quotes-hero-text h4 {
+    margin: 0;
+}
+
+.quotes-hero-cta {
+    background-color: #4d4d4d;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.quotes-hero-btn {
+    /* border: 1px dashed #fff; */
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.quotes-hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.quotes-hero-right-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.slider-img {
+    width: 90%;
+}
+
+.slider-img-2 {
+    width: 88%;
+}
+
+.quotes-step-section {
+    margin: 30px 0;
+    padding: 15px 0;
+    margin-top: 3em;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FD9207;
+}
+
+.step-section-detail {
+    /* margin: 20px 0px; */
+    padding: 25px 0px;
+    padding-top: 40px;
+}
+
+.step-title h1 {
+    color: #1F2831;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.step-title p {
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 32.4px;
+}
+
+.step-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-title {
+    color: #1F2831;
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 0 !important;
+    padding-bottom: 2px;
+}
+
+.step-section img {
+    margin-bottom: 2em;
+}
+
+.step-more-detais {
+    color: #212529;
+    text-align: center;
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+
+.quotes-template-sectio {
+    margin: 30px 0;
+    padding: 15px 0;
+}
+
+.quotes-template-title h1 {
+    color: #1F2831;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.quotes-template-title p {
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 32.4px;
+}
+
+.quote-category-detail {
+    /* width: 350px; */
+    height: 310px;
+    margin: 2.5em 0px;
+    border-radius: 8px;
+    background: #FFFFFA;
+    -webkit-box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+.quote-category-detail img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.quote-category-detail h4 {
+    padding: 35px 0px;
+    padding-top: 10px;
+    margin: 0 !important;
+    color: #4D4D4D;
+    font-size: 15.232px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.howitwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    color: #000;
+}
+
+.howitwork-main-container {
+    display: grid;
+    grid-template-columns: 318px 1fr 318px 1fr 318px;
+
+    /* Media query for screens smaller than or equal to 768px */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        /* Single column layout for smaller screens */
+    }
+}
+
+.step-arrow {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.howitwork h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.howitwork p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.howitwork samp {
+    color: #FDEB04;
+}
+
+.howitwork-img img {
+    width: 100px;
+}
+
+.howitworkheading {
+    margin-bottom: 1.5em;
+    margin: 20px 150px;
+}
+
+.template-cta {
+    width: 188px;
+    background-color: rgb(253, 235, 4);
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.quotes-category-section {
+    margin: 30px 0;
+    padding: 15px 0;
+}
+
+.quotes-category-list {
+    margin-top: 2.3em;
+    /* margin: 25px 0; */
+}
+
+.mail-list-die {
+    display: flex;
+    justify-content: center;
+    /* flex-grow: inherit; */
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.mail-list-die samp {
+    color: #4D4D4D;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.category-active {
+    color: #FD9207 !important;
+}
+
+.quotes-click-section {
+    margin: 2em 0;
+}
+
+.main-quotes-content {
+    padding: 1em 0;
+}
+
+.quotes-content-2 img {
+    width: 90%;
+}
+
+.quotes-content {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-content: center;
+}
+
+.quotes-content h2 {
+    color: #000;
+    font-size: 36px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.quotes-content-1 {
+    margin-left: 2em;
+    margin-top: 5em;
+}
+
+.quotes-details-1 {
+    background: #FFFDE8;
+}
+
+.quotes-details-cta {
+    margin-top: 3em;
+    margin-left: 1em;
+}
+
+.quotes-details-btn button {
+    border-radius: 33.255px;
+    border: 3.44px solid #FDEB04;
+    background: #FFF;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 500
+}
+
+.quotes-content-text h4 {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 33.5px;
+}
+
+.quotes-content-1-left {
+    margin-right: 2em;
+    margin-top: 5em;
+}
+
+.is_hidden {
+    display: none;
+}
+
+.quotes-content-show {
+    display: block;
+}
+
+.mobile_title_show {
+    display: none;
+}
+
+.swiper-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+/* Add a CSS class to make all quote items visible by default */
+.main-quotes-content {
+    display: block;
+}
+
+/* Hide the quote items with this class initially */
+.quotes-content-hide {
+    display: none;
+}
+
+/* CSS for desktop styles */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+
+    /* CSS for mobile styles */
+    .hero_mobile_hide {
+        display: none;
+    }
+
+    .quotes_hero_slider {
+        height: unset;
+    }
+
+    .hero_slide {
+        height: unset !important;
+    }
+
+    .swiper-pagination {
+        padding-top: 10px;
+    }
+
+    .quotes-hero-life {
+        padding-left: 0;
+        padding-right: 8px;
+    }
+
+    .mobile_padding {
+        padding-right: 22px;
+    }
+
+    .hero_mobile_show {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .quotes_main_div {
+        background: linear-gradient(180deg, rgba(253, 235, 4, 1) 18%, rgba(255, 201, 1, 1) 75%);
+
+    }
+
+    .quotes-hero-life h1 {
+        text-align: center;
+        font-size: 20px !important;
+        color: #fff;
+    }
+
+    .quotes-hero-text h4 {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .quotes-hero-icon img {
+        width: 22px;
+        color: #fff;
+    }
+
+    .mobile_hero_btn {
+        justify-content: center;
+    }
+
+    .quotes-hero-cta {
+        background-color: #FDC705;
+       
+    }
+    .quotes-hero-btn{
+        color: #4D4D4D;
+    }
+    .quotes_hero_silder_1 {
+        background-image: url("/img/quotes-page-images/hero-slider-img-1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 460px;
+    }
+
+    .quotes_hero_silder_2 {
+        background-image: url("/img/quotes-page-images/hero-slider-img-2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 460px;
+    }
+
+    .hero_mobile_show {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.8183648459383753) 0%);
+    }
+
+    .step-section {
+        max-width: 100%;
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 3em;
+    }
+
+    .quote-category-detail {
+        height: 200px;
+    }
+
+    .quote-category-detail h4 {
+        padding: 15px 5px;
+    }
+
+    .template-cta {
+        margin-top: 4.4em;
+    }
+
+    .quotes-details-1 {
+        flex-direction: column-reverse;
+        padding: 1.5em 0;
+    }
+
+    .quotes_mobile_content {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .quotes-content-2 img {
+        width: 100%;
+    }
+
+    .mobile_title_hide {
+        display: none;
+    }
+
+    .mobile_title_show {
+        display: block;
+    }
+
+    .quotes-content h2 {
+        font-size: 28px;
+    }
+
+    .quotes-content-1 {
+        margin-top: unset;
+        margin-left: 1em;
+    }
+
+    .quotes-details-cta {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .newTestimonials .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 110px !important;
+    }
+
+    /* Adjust styles for smaller screens */
+}
+
+.howitwork-main-container {
+    display: grid;
+    grid-template-columns: 318px 1fr 318px 1fr 318px;
+
+    /* Media query for screens smaller than or equal to 768px */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        /* Single column layout for smaller screens */
+    }
+}
+
+.howitwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    color: #000;
+}
+
+.howitwork-img img {
+    width: 100px;
+}
+
+.howitwork-img {
+    display: flex;
+    justify-content: center;
+}

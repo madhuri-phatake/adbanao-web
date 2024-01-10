@@ -1,0 +1,39 @@
+
+User-agent: Googlebot
+Allowed: 
+User-agent: googlebot-image
+Allowed: 
+User-agent: googlebot-mobile
+Allowed: 
+User-agent: MSNBot
+Allowed: 
+User-agent: Slurp
+Allowed: 
+User-agent: Teoma
+Allowed: 
+User-agent: Gigabot
+Allowed: 
+User-agent: Robozilla
+Allowed: 
+User-agent: Nutch
+Allowed: 
+User-agent: ia_archiver
+Allowed: 
+User-agent: baiduspider
+Allowed: 
+User-agent: naverbot
+Allowed: 
+User-agent: yeti
+Allowed: 
+User-agent: yahoo-mmcrawler
+Allowed: 
+User-agent: psbot
+Allowed: 
+User-agent: yahoo-blogs/v3.9
+Allowed: 
+User-agent: *
+Allowed: 
+Allowed: /cgi-bin/
+Sitemap: https://www.adbanao.com/sitemap.xml
+
+

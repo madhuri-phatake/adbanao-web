@@ -1,0 +1,422 @@
+<!--start navbar-->
+<style>
+    /* search bar animation */
+    .input-box {
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+        height: 40px;
+        margin: 0 0px;
+        /* background-color: #fff; */
+        border-radius: 6px;
+        transition: all 0.5s ease-in-out;
+        /* -webkit-box-shadow: 1px 1px 10px -10px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 1px 1px 10px -10px rgba(0, 0, 0, 1);
+        box-shadow: 2px 5px 13px -9px rgba(0, 0, 0, 1); */
+    }
+
+    .selected {
+        background-color: #f1f1f1;
+    }
+
+    .input-box input {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+        padding: 0 15px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .input-box .search {
+        position: absolute;
+        top: 3px;
+        /* left: -50px; */
+        right: 0;
+        width: 60px;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #fff; */
+        border-radius: 6px;
+        cursor: pointer;
+        /* box-shadow: 2px 5px 13px -9px rgba(0, 0, 0, 1); */
+    }
+
+    .search .search-icon {
+        font-size: 24px;
+        color: #1c1c1c;
+    }
+
+    .input-box .close-icon {
+        position: absolute;
+        top: 50%;
+        right: -45px;
+        font-size: 30px;
+        color: #1c1c1c;
+        padding: 5px;
+        transform: translateY(-50%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .input-box.open {
+        max-width: 350px;
+    }
+
+    .input-box.open input {
+        padding: 0 15px 0 65px;
+    }
+
+    .input-box.open .search {
+        border-radius: 6px 0 0 6px;
+    }
+
+    /* Add your desired background color for the selected option */
+    .search-option option[selected] {
+        background-color: #f5f5f5;
+    }
+
+
+    .input-box .close-icon {
+        position: absolute;
+        top: 50%;
+        right: -45px;
+        font-size: 30px;
+        color: #1c1c1c;
+        padding: 5px;
+        transform: translateY(-50%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .input-box.open .close-icon {
+        transform: translateY(-50%) rotate(180deg);
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .search-option {
+        position: absolute;
+        left: 0%;
+        background: #fff;
+        width: -webkit-fill-available;
+        border: 1px solid #c2c2c2;
+        border-radius: 8px;
+        top: 50px;
+        padding: 10px;
+        max-height: 200px;
+        /* Set the maximum height for the dropdown */
+        overflow-y: auto;
+        /* Enable vertical scrollbar when content exceeds max height */
+        z-index: 1;
+
+    }
+
+
+    .search-option p {
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+
+    .searchResult {
+        color: #1c1c1c;
+        padding: 5px !important;
+        margin-bottom: 0px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .searchResult.active {
+        background-color: #e8e8e8;
+        /* Change this to the desired background color */
+        cursor: pointer;
+    }
+
+    .search-option a {
+        padding: 2px !important;
+        cursor: pointer;
+    }
+
+    .hide-search {
+        display: none;
+    }
+
+    .search-option::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .mob {
+        display: none;
+    }
+    .search-li{
+        padding: 2px;
+        background-color: #f8f8f88f;
+        border-radius: 40px;
+        width: 350px;
+        margin-top: 3px;
+        outline: 0.01rem solid #c7c7c7;
+    }
+    #search-input{
+        background: transparent;
+    }
+    #search-input::placeholder {
+    color: #3d3d3d !important; /* Set your desired placeholder color here */
+    font-size: 16px;
+    }
+    .menu{
+        margin-left: 5em;
+    }
+    #navbarSupportedContent{
+        justify-content: end;
+    }
+
+    /* Extra small devices (phones) */
+    @media (max-width: 575.98px) {
+        .input-box.open {
+            max-width: 250px;
+        }
+
+        .navbar-brand {
+            width: 125px;
+        }
+
+        .lap {
+            display: block;
+        }
+
+        .header nav.navbar {
+            border-radius: 0px;
+        }
+        .search-li{
+            width: 290px;
+        }
+        .mob {
+            display: none;
+        }
+
+        .navbar-brand img {
+            width: 100%;
+        }
+
+        .mob-container {
+            /* gap: 0 !important;
+        justify-content: normal !important; */
+        }
+        .sidepanelContainer {
+    top: 48% !important;
+    height: 150px;
+}
+    }
+        /* .input-box .search {
+        right: 0;
+        width: 60px;
+        left: unset;
+        }
+        .input-box{
+            max-width: 100%;
+        } */
+
+    .dropdown-item {
+        padding: 0.25rem 1rem;
+    }
+    .sidepanelContainer{
+        top:26%;
+        height: 150px;
+    }
+    .menu{
+        margin-left: 0px;
+        /* display: flex; */
+        margin-top: 1em;
+        gap: 15px;
+    }
+   
+</style>
+<nav class="navbar navbar-expand-lg fixed-top bg-white roundedBottom">
+    <div class="container mob-container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/images/logo/logo-black.svg" width="160" alt="logo" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav menu">
+                <li class="search-li">
+                    <div class="input-box lap">
+                        <input type="text" placeholder="What are you looking for?" id="search-input" autocomplete="off" />
+                        <div class="options search-option  hide-search">
+                            <!-- Dropdown options will be added here -->
+                        </div>
+                        <span class="search">
+                            <i class="uil uil-search search-icon"></i>
+                        </span>
+                        <i class="uil uil-times close-icon"></i>
+                    </div>
+                </li>
+                <li><a href="/" class="page-scroll" id="homeAnchor">Home</a></li>
+
+                <!-- <li><a href="/getfreequotes" class="page-scroll" id="homeAnchor">Quotes</a></li>
+                <li><a href="/freelogomaker" class="page-scroll" id="homeAnchor">Logo</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" id="industries"
+                        role="button">Industries</a>
+
+                    <!-- for mobile industry dropdown -->
+                    <div class="megaMunuDropdowns shadow dropdown-menu d-lg-none industryDropdown">
+                        <div class="row industriesData px-3">
+                            <% sub_industries_data.forEach(function(subIndustry) { %>
+
+                                <div class="col-sm-12 col-md-4 col-lg-3 industryDiv" style="margin-bottom:0 !important">
+                                    <a href="/<%= subIndustry.website_sub_industry_url %>"
+                                        class="text-dark industryName" id="searchSubIndustry">
+                                        <%= subIndustry.sub_industry %>
+                                    </a>
+                                    <div
+                                        style="height: 0;margin: 0.5rem 0;overflow: hidden;border-top: 0.5px solid #f3f5f6;">
+                                    </div>
+                                </div>
+                                <% }) %>
+                        </div>
+                    </div>
+                    <!-- for desktop industry dropdown -->
+                    <div class="megaMunuDropdowns shadow d-none industryDropdown" id="industryDropdown">
+                        <div class="row industriesData px-3" id="industriesData">
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+
+                            <% sub_industries_data.forEach(function(subIndustry) { %>
+
+                                <div class="col-sm-12 col-md-4 col-lg-3 industryDiv" style="margin-bottom:0 !important">
+                                    <a href="/<%= subIndustry.sub_industry == 'Other' ? 'industry' : subIndustry.website_sub_industry_url  %>"
+                                        class="text-dark industryName">
+                                        <%= subIndustry.sub_industry %>
+                                    </a>
+                                    <div
+                                        style="height: 0;margin: 0.5rem 0;overflow: hidden;border-top: 0.5px solid #f3f5f6;">
+                                    </div>
+                                </div>
+
+                                <% }) %>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" id="eventDropdown"
+                        role="button">Events</a>
+
+                    <!-- for mobile view event dropdown menu -->
+                    <div class="megaMunuDropdowns shadow dropdown-menu d-lg-none industryDropdown">
+                        <div class="row eventsData px-3">
+                            <% event_data.forEach(function(event) { %>
+                                <div class="col-sm-12 col-md-4 col-lg-3 eventDiv" style="margin-bottom:0 !important">
+                                    <a href="/<%= event.website_url %>" class="text-dark eventsName">
+                                        <%= event.sub_category_name %>
+                                    </a>
+                                    <div
+                                        style="height: 0;margin: 0.5rem 0;overflow: hidden;border-top: 0.5px solid #f3f5f6;">
+                                    </div>
+                                </div>
+                                <% }) %>
+
+                        </div>
+
+                    </div>
+
+                    <!-- for desktop event dropdown -->
+                    <div class="megaMunuDropdowns shadow d-none eventsDropdownMenu" id="eventsDropdownMenu">
+                        <div class="row eventsData px-3" id="eventsData">
+
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3 pt-3" style="border-right:1px dashed #f5f5f5">
+                            </div>
+
+                            <% event_data.forEach(function(event) { %>
+                                <div class="col-sm-12 col-md-4 col-lg-3 eventDiv" style="margin-bottom:0 !important">
+                                    <a href="/<%= event.website_url %>" class="text-dark eventsName">
+                                        <%= event.sub_category_name %>
+                                    </a>
+                                    <div
+                                        style="height: 0;margin: 0.5rem 0;overflow: hidden;border-top: 0.5px solid #f3f5f6;">
+                                    </div>
+                                </div>
+                                <% }) %>
+
+                        </div>
+
+                    </div>
+
+                </li>
+                <!-- <li><a href="/aboutus" class="page-scroll" id="">About Us</a></li> -->
+                <!-- <li class=" dropdown discover_li">
+                    <a class=" dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Discover
+                    </a>
+                    <div class=" dropdown-menu" style="border-radius:11px" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/daily_quotes"
+                            style="  padding: 0.25rem 1rem; border-bottom: 1px solid #ece1e1;">Quotes</a>
+
+                        <a class="dropdown-item" href="/logo_page"
+                            style="  padding: 0.25rem 1rem;background-color: #FFFAEE;">Logo</a>
+                    </div>
+                </li> -->
+                <li><a href="/#pricing" class="page-scroll" id="pricingAnchor">Pricing</a></li>
+                <li><a href="/blogs" class="page-scroll" id="blogAnchor">Blog</a></li>
+
+                <li><a href="https://web.adbanao.com"><button type="button" class="btn btn-warning rounded-pill"
+                            id="loginAnchor" style="font-weight: bold;">SignUp</button></a></li>
+            
+
+            </ul>
+
+
+        </div>
+        <div class="input-box mob">
+            <input type="text" placeholder="Search..." id="search-input" />
+            <select class="search-option hide-search">
+                <option value="" disabled selected>Search</option>
+            </select>
+            <span class="search">
+                <i class="uil uil-search search-icon"></i>
+            </span>
+            <i class="uil uil-times close-icon"></i>
+        </div>
+    </div>
+
+</nav>
+<script>
+    // Convert array of objects to a regular JavaScript array
+    let industry_url = "<%= JSON.stringify(sub_industries_data) %>";
+
+</script>
+<!-- end navabr -->

@@ -1,0 +1,986 @@
+.hero_section_logo {
+    /* margin-top: 5.5em; */
+    padding-top: 5em;
+    background: linear-gradient(181.68deg, #FEE704 0.26%, #fdcb00 112.81%);
+}
+
+.sliderPart_1 {
+    padding-left: 1em;
+}
+
+.LogosliderImage1 img {
+    height: 450px;
+}
+
+.main_slider {
+    padding: 25px 0px;
+}
+
+.logoSliderTitle h2 {
+    color: #1C1C1C;
+    font-size: 38px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FEE704;
+}
+
+.swiper-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.swiper-pagination {
+    padding-top: 34px;
+}
+
+.logo_hero_slider {
+    background: linear-gradient(181.68deg, #FEE704 0.26%, #fdcb00 85%);
+}
+
+.logoSliderTitle samp {
+    color: #1C1C1C;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.logoSliderP p {
+    color: #000;
+    /* text-align: justify; */
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sliderIcon p {
+    color: #000;
+    /* text-align: justify; */
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.LogosliderImage {
+    text-align: center;
+}
+
+.LogosliderImage img {
+    width: 100%;
+}
+
+.sliderPart_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logosliderCta {
+    width: 250px;
+    background-color: #4D4D4D;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.logosliderCta button {
+    /* border: 1px dashed #fff; */
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Montserrat;
+    padding: 5px 8px;
+    color: #fff;
+}
+
+.logo_hero_slider {
+    overflow: hidden;
+}
+
+.slide_2 {
+    position: relative;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7063200280112045) 0%);
+}
+
+.slider_bg_img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 90%;
+}
+
+.slider_bg_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide_2 h2,
+samp {
+    color: #FDEB04;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 10px;
+}
+
+.slide_2 samp {
+    color: #FDEB04;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.slide_2 p {
+    color: #FFF;
+    /* text-align: justify; */
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.slide_2 .logosliderCta {
+    width: 250px;
+    background: #FDEB04;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.slide_2 .logosliderCta button {
+    /* border: 1px dashed #fff; */
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-family: Montserrat;
+    padding: 5px 8px;
+    font-weight: 700;
+    color: #4d4d4d;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset; */
+
+}
+
+.second_section_logo {
+    margin: 5em 0;
+}
+
+.logo_section_title h2 {
+    color: #1F2831;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+    margin-bottom: 2em;
+}
+
+.second_step_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.step_list {
+    display: flex;
+    gap: 10px;
+}
+
+.step_list h4 {
+    margin: 0;
+}
+
+.third_step_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.step_list {
+    display: flex;
+    gap: 10px;
+}
+
+
+.step_list li {
+    margin: 0;
+}
+
+.importantOfLogo {
+    display: flex;
+}
+
+.importantOfLogo img {
+    width: 90%;
+    height: 90%;
+}
+
+.main_third_section {
+    position: relative;
+    background: rgb(255, 255, 255);
+    height: 450px;
+    /* padding: 25px 0px; */
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7063200280112045) 0%);
+     */
+    background: transparent;
+}
+
+.third_section_bg img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.create_logo h3,
+h5 {
+    color: #FFF;
+}
+
+.create_logo h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78.079px;
+}
+
+.create_logo h5 {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.079px;
+}
+
+#create_logo_form {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.business_name {
+    width: 35%;
+    padding: 10px;
+    padding-left: 15px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.create_logo_btn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FDC705;
+    border: none;
+    padding: 8px 25px;
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.business_name::placeholder {
+
+    color: #4D4D4D;
+    /* text-align: center; */
+    font-size: 18px !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.fourth_section_logo {
+    margin: 3em 0px;
+}
+
+.free_logo_container h3 {
+    color: #1F2831;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+.free_logo_container h6 {
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.4px;
+}
+
+.free_logo_step {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr 100px 1fr;
+    gap: 5px;
+    margin: 2.5em 0;
+}
+
+.free_logo_card {
+    border-radius: 11.875px;
+    border: 1.17px solid #FDEB04;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 25px 20px;
+    gap: 1.5em;
+}
+
+.free_logo_card img {
+    width: 25%;
+}
+
+.step_border {
+    width: 20% !important;
+}
+
+.free_logo_step {
+    align-self: center;
+}
+
+.free_logo_card p {
+    margin: 0;
+    text-align: left;
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.free_logo_card samp {
+    color: #000;
+    font-size: 16.428px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.6;
+    align-self: center;
+}
+
+#get_inspired {
+    margin: 3em 0px;
+    margin-bottom: 0px;
+    background: #FFFDE8;
+    padding: 3em 0;
+}
+
+.get_inspired_container h2 {
+    color: #1F2831;
+    text-align: center;
+    font-size: 48px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+.get_inspried_img {
+    padding: .5em 0;
+    padding-top: 2.5em;
+}
+
+.get_inspried_img img {
+    width: 100%;
+}
+
+#browes_logo {
+    background: linear-gradient(180deg, #FDEB04 0%, #FFC901 100%);
+    padding: 2.5em 0px;
+}
+
+.browes_logo_main {
+    text-align: center;
+}
+
+.browes_flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+    padding: .5em 1em;
+}
+
+.browes_btn button {
+    border: none;
+    padding: 5px 18px;
+    color: #000;
+    border-radius: 12px;
+    background: #FFF;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.browes_btn_last button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 5px 18px;
+    color: #000;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.browes_btn_last img {
+    width: 18px;
+}
+
+#plan {
+    margin-bottom: 2em;
+}
+
+.plan_logo_containe {
+    padding-top: 3em;
+    padding-bottom: 4.5em;
+    text-align: center;
+
+}
+
+.plan_title {
+    color: #1F2831;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+.plan_details {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5em
+}
+
+.plan_card {
+    border-radius: 20px;
+    border: 1px solid #24ABC1;
+    background: #FFF;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.card_title_img {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    align-items: center;
+
+}
+
+.card_title_img img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.card_title p {
+    color: #24ABC1;
+    text-align: center;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 0;
+    letter-spacing: -1.205px;
+}
+
+.card_title samp {
+    color: #24ABC1;
+    text-align: center;
+
+    font-size: 18px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.456px;
+    letter-spacing: -0.936px;
+}
+
+.card_title hr {
+    margin: .5em 0;
+    width: 80%;
+    color: #24ABC1;
+}
+
+.plan_details_list {
+    margin-top: 1.5em;
+}
+
+.plan_item {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: 10px 15px;
+}
+
+.plan_item i {
+    font-size: 16px;
+    align-self: baseline;
+    padding-top: 3px;
+}
+
+.plan_item p {
+    color: #5F5E5E;
+    font-size: 16px;
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.5px;
+    letter-spacing: -0.835px;
+}
+
+.card_2 {
+    border: 1px solid #FF9800 !important;
+    padding-bottom: 5em;
+}
+
+.card2 p {
+    color: #FF9800;
+}
+
+.card2 hr {
+    color: #FF9800;
+}
+
+.card2 samp {
+    color: #FF9800;
+}
+
+.card3 p {
+    color: #FF7861;
+}
+
+.card3 hr {
+    color: #FF7861;
+}
+
+.card3 samp {
+    color: #FF7861;
+}
+
+.card_3 {
+    border: 1px solid #FF7861 !important;
+}
+
+.plan_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5em 0;
+    background-color: #24ABC1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+
+}
+
+.plan_btn button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.card_2_btn {
+    border: 1px solid #FF9800;
+    background: #FF9800;
+}
+
+.card_3_btn {
+    border: 1px solid #FF7861;
+    background: #FF7861;
+}
+
+#eight_section_logo {
+    background: #FDFBE5;
+}
+
+.contactUsImg img {
+    width: 100%;
+}
+
+.contactUsdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8em;
+}
+
+.contactUsdetails h3 {
+    color: #000;
+    font-size: 42px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10.4px;
+}
+
+.contactUsdetails h5 {
+    color: #4D4D4D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.4px;
+    margin-bottom: 1em;
+}
+
+.contactUsBtn {
+    width: 220px;
+    text-align: center;
+    border-radius: 29px;
+    padding: 3px;
+    background: #FDC705;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.contactUsBtn button {
+    background-color: transparent;
+    /* border: 1px dashed #000; */
+    border: none;
+    border-radius: 29px;
+    width: 100%;
+    padding: 5px 5px;
+    color: #4D4D4D;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contactUsLogo {
+    background-color: #FDFBE5;
+}
+
+.sub_text p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8.602px;
+    letter-spacing: -0.408px;
+}
+
+.web_hide {
+    display: none;
+}
+
+/* .slider_2_container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.7175245098039216) 0%);
+} */
+
+@media only screen and (max-width: 600px) {
+
+    /* Styles for mobile devices go here */
+    .mobile_hide {
+        display: none;
+    }
+
+    .web_hide {
+        display: block;
+    }
+
+    .mobile_div {
+        max-width: 100%;
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .slide_1 {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7063200280112045) 0%);
+    }
+
+    .slide_1 {
+        background: url("/img/logoPageImages/mobile_silder_bg_one.png");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+    }
+
+    .slide_2 {
+        background: url("/img/logoPageImages/mobile_slider_bg_2.png");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+    }
+
+    .sliderPart_1 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        gap: 3em;
+    }
+    .video-slider{
+        gap: 4em;
+    }
+
+    .logoSliderTitle h2 {
+        font-size: 22px;
+        line-height: 30px;
+        color: #FDE804;
+    }
+
+    .logoSliderTitle samp {
+        font-size: 24px;
+        line-height: 30px;
+        color: #FDE804;
+    }
+
+    .logoSliderP p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+
+    .sliderIcon p {
+        text-align: start;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+
+    .sliderIcon img {
+        width: 24px;
+    }
+
+    .logosliderCta {
+        align-self: center;
+    }
+
+    .mobile_branding {
+        flex-direction: column-reverse;
+    }
+
+    .step_list img {
+        height: 34px;
+    }
+
+    .step_list p {
+        color: #1C1C1C;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #create_logo_form {
+        margin: 1em 0
+    }
+
+    .second_step_list {
+        padding-top: 20px;
+        /* text-align: center; */
+        padding-left: 20px;
+    }
+
+    .third_step_list {
+        padding-top: 20px;
+        /* text-align: center; */
+        padding-left: 20px;
+    }
+
+    .logo_section_title h2 {
+        margin-bottom: 1em;
+    }
+
+    .importantOfLogo {
+        justify-content: center;
+    }
+
+    .importantOfLogo img {
+        padding-bottom: 2em;
+    }
+
+    .logosliderCta {
+        margin: auto;
+    }
+
+    .create_logo h3 {
+        font-size: 18px;
+        line-height: 20.079px;
+        /* padding: 10px 40px; */
+        color: #FDE904
+    }
+
+    .create_logo h5 {
+        font-size: 17px;
+        line-height: 20.079px;
+    }
+
+    .sub_text p {
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 8.602px;
+    }
+
+    .create_logo_btn {
+        font-size: 10px;
+        padding: 15px 15px;
+    }
+
+    .create_logo {
+        display: contents;
+    }
+
+    .business_name {
+        padding: unset;
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    .business_name::placeholder {
+        font-size: 10px !important;
+    }
+
+    .mobile_free_div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .free_logo_container h3 {
+        font-size: 28px;
+    }
+
+    .free_logo_container h6 {
+        font-size: 20px;
+    }
+
+    .get_inspired_container h2 {
+        font-size: 22px;
+    }
+
+    .browes_logo_container h2 {
+        font-size: 28px;
+    }
+
+    .browes_btn button {
+        font-size: 16px;
+    }
+
+    .browes_flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .plan_title {
+        font-size: 32px;
+    }
+
+    .plan_details {
+        flex-direction: column;
+    }
+
+    .plan_card {
+        height: 580px;
+    }
+
+    .contactUsMobile {
+        flex-direction: column;
+    }
+
+    .contactUsdetails {
+        gap: 0px;
+        text-align: center;
+    }
+
+    .contactUsdetails h3 {
+        font-size: 28px;
+    }
+
+    .contactUsBtn {
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    .main_third_section {
+        height: 250px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7063200280112045) 0%);
+
+    }
+
+    .mobile_slide {
+        gap: 4em;
+    }
+
+    .sliderIcon {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+.sliderIcon {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}

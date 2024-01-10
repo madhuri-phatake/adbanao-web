@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta description -->
+    <meta name="description"
+        content="Stay on Top of Customer's Minds! Create Unique Business Posts, Posters, Templates, Videos, Logos & Flyers in just a Few Clicks & Share Them Now.">
+    <meta data-id="image" property="og:image" content="https://www.adbanao.com/img/industryimages/blog.jpg">
+    <link rel="canonical" href="https://www.adbanao.com/img/industryimages/blog.jpg">
+    <meta data-id="site_name" property="og:site_name" content="<%= process.env.BASE_URL %>/blogs">
+    <meta name="language" content="en">
+
+    <link rel="canonical" href="<%= process.env.BASE_URL %>/blogs">
+    <!-- Meta Keyword-->
+    <meta name="keywords" content="Karnataka elections 2023, Yediyurappa, b s yediyurappa, Jagdish Shettar, siddaramaiah,,jds photos, jds kumarswamy, nalin kumar kateel,narendra modi images,modi karnataka,rahul gandhi karnataka,kiccha sudeep,sudeep bjp photos,kannadiga, dk aruna, dk shivakumar, bommai cm, bommai images">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="http://www.adbanao.com" /> <!-- website name -->
+    <meta property="og:site" content="http://www.adbanao.com" /> <!-- website link -->
+    <meta property="og:title" content="Adbanao Blogs" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" name="description"
+        content="Stay on Top of Customer's Minds! Create Unique Business Posts, Posters, Templates, Videos, Logos & Flyers in just a Few Clicks & Share Them Now." />
+    <!-- description shown in the actual shared post -->
+
+    <meta property="og:keywords" name="keywords" content="Karnataka elections 2023, Yediyurappa, b s yediyurappa, Jagdish Shettar, siddaramaiah,,jds photos, jds kumarswamy, nalin kumar kateel,narendra modi images,modi karnataka,rahul gandhi karnataka,kiccha sudeep,sudeep bjp photos,kannadiga, dk aruna, dk shivakumar, bommai cm, bommai images" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://www.adbanao.com/blogs" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+    <meta name="google-site-verification" content="mP1j9VHtxl8i8u3xVKI94z6nNg46C9u8nnmRR3aT3j4" /> 
+    <%- include ./layouts/partials/meta.ejs %>
+
+    <!--title-->
+    <title>
+        AdBanao Blogs Listings
+    </title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="./assets/images/logo/favicon.png" type="image/png" sizes="16x16">
+
+    <!--custom css-->
+    <%- include ./layouts/partials/styles.ejs %>
+    <link rel="stylesheet" href="/css/blog_list.css">
+
+    <!-- for google analytics -->
+    <%- include ./layouts/partials/google-analytics.ejs %>
+
+
+</head>
+
+<body>
+
+    <!-- Pre-loader start -->
+    <%- include ./layouts/partials/pre-loader.ejs %>
+        <!-- Pre-loader end -->
+
+        <!-- header start -->
+        <header class="header">
+            <%- include ./layouts/partials/navbar.ejs %>
+        </header>
+        <!-- header end -->
+        <div class="main_blog_container mb-5">
+            <div class="blogBaner">
+
+            </div>
+            <div class="container blog_container" id="blog_id">
+                <h1 class="text-center">AdBanao Blogs</h1>
+                <div class="row " id="blog_row">
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section start -->
+        <%- include ./layouts/partials/footer.ejs %>
+            <!-- footer section end -->
+
+
+            <!-- script start -->
+            <%- include ./layouts/partials/scripts.ejs %>
+                <!-- script end -->
+                <script src="../assets/js/blogs.js"></script>
+
+</body>
+
+</html>

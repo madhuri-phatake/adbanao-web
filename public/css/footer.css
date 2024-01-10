@@ -1,0 +1,517 @@
+:root {
+    --yellow: #fdeb04;
+    --dull-yellow: #d6a400;
+    --black: #000000;
+    --dark-grey: #131313;
+    --grey: #333333;
+    --pink: #FEF6D9;
+    --white: #ffffff;
+    --title: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --blackTransparent: #00000090;
+}
+
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../../assets/fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Black Italic';
+    src: url('../../assets/fonts/Montserrat-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../../assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold Italic';
+    src: url('../../assets/fonts/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Extra Bold';
+    src: url('../../assets/fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Extra Bold Italic';
+    src: url('../../assets/fonts/Montserrat-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Extra Light';
+    src: url('../../assets/fonts/Montserrat-ExtraLight.ttf');
+}
+
+#adbanao__howItWorksModal .modal-content {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.showcaseImage img {
+    height: 100%;
+}
+
+.showcaseInfoSection {
+    position: relative;
+}
+
+.showcaseInfo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.showcaseInfo h3 {
+    color: var(--yellow);
+    font-size: 24px;
+    font-family: 'Montserrat Bold';
+}
+
+.showcaseInfo h1 {
+    color: var(--black);
+    font-size: 36px;
+    font-family: 'Montserrat Bold';
+}
+
+.gearsBg {
+    background-image: url('../../assets/images/elements/gears.svg');
+    background-size: 100% 100%;
+}
+
+.bgGrey {
+    background: var(--grey);
+    padding: 20px 0px;
+    position: relative;
+    overflow-y: visible;
+}
+
+.circleRight,
+.circleLeft {
+    position: absolute;
+}
+
+.circleRight {
+    right: 0px;
+    top: -100px
+}
+
+.circleLeft {
+    bottom: -30px;
+    left: 0px;
+}
+
+.industryGrid {
+    display: flex;
+    gap: 10px;
+}
+
+.gridBox {
+    margin: 20px 0px;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gridBox img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.gridBox:hover {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    transition: .2s;
+}
+
+.gridBox p {
+    font-size: 14px;
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+}
+
+.bgYellow {
+    background: var(--yellow)
+}
+
+.templatesSection {
+    margin: 40px 0px;
+}
+
+.swiperDate {
+    background: var(--white);
+    border-radius: 25px 25px 0px 25px;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.getStartedBtns {
+    display: flex;
+    gap: 5px;
+}
+
+.getStartedBtns .downloadBtns a img {
+    width: 160px
+}
+
+.swiperDate h3 {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.swiperDate h3 .small {
+    font-size: 14px;
+}
+
+.swiperDate .day {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    margin-bottom: 10px
+}
+
+.swiperDate .festival {
+    background: #FEF6D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 25px 25px 0px 25px;
+}
+
+.swiperDate .festival p {
+    margin: 0px;
+    font-size: 12px;
+    color: var(--black)
+}
+
+.swiperDate .ico {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.swiperDate .ico img {
+    height: 25px
+}
+
+.spinnerContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.638);
+    backdrop-filter: blur(2px);
+    top: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiperDate.active {
+    background: var(--grey);
+    border-radius: 25px 25px 0px 25px;
+    padding: 15px;
+    position: relative;
+}
+
+.swiperDate.active h3 {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.swiperDate.active h3 .small {
+    font-size: 14px;
+}
+
+.swiperDate.active .day {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.templatesGridSection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    padding: 5px 5px;
+    max-width: 25%;
+}
+
+.column img {
+    border-radius: 8px;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.testimonialCard {
+    border-radius: 8px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    background: var(--white);
+    position: relative;
+    padding: 20px 40px;
+    transition: .5s;
+}
+
+.testimonialCard::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff !important;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    opacity: .5;
+    transition: .5s;
+}
+
+.testimonialImage {
+    background-image: url("../../assets/images/elements/testimonial_1.svg");
+    background-size: 100% 100%;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialImage img {
+    border-radius: 100px;
+    width: 110px;
+    text-align: center;
+}
+
+.testimonialName {
+    margin-top: 150px
+}
+
+.testimonialName h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.testimonialName p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonialCard .feedback {
+    position: relative;
+}
+
+.testimonialCard .feedback::before {
+    content: "";
+    background-image: url("../../assets/images/elements/quotes_right.svg");
+    background-size: 100% 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+}
+
+.testimonialCard .feedback::after {
+    content: "";
+    background-image: url("../../assets/images/elements/quotes_left.svg");
+    background-size: 100% 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+}
+
+.testimonialCard .feedback p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.swiper-slide.testimonialCard.swiper-slide-active {
+    width: 50% !important;
+    height: 380px !important;
+    margin-top: -25px;
+}
+
+.swiper-slide.testimonialCard.swiper-slide-active::after {
+    opacity: 0;
+    transition: .5s;
+}
+
+.downloadAppSection {
+    position: relative;
+    margin: 150px 0px 0px 0px;
+    height: 200px;
+    z-index: 998;
+}
+
+.rightDownloadPill {
+    position: absolute;
+    right: 20px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.rightDownloadPill .downloadImage {
+    width: 40%;
+    margin-top: -140px;
+    margin-left: -50px;
+}
+
+.rightDownloadPill .rightDownloadSection {
+    padding: 0px 80px;
+}
+
+.rightDownloadPill .rightDownloadSection h1 {
+    font-weight: 600;
+    font-size: 32px;
+    font-family: "Montserrat Bold";
+    color: var(--black)
+}
+
+.rightDownloadPill .rightDownloadSection .downloadBtns {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.rightDownloadPill .rightDownloadSection .downloadBtns a {
+    width: 180px;
+}
+
+.rightDownloadPill .rightDownloadSection .downloadBtns a img {
+    width: 100%;
+}
+
+footer {
+    padding: 40px 0px 0px 0px;
+}
+
+.brandIntro img {
+    width: 200px
+}
+
+.brandIntro p {
+    margin: 10px 0px;
+    color: #cfcfcf;
+    font-size: 12px;
+}
+
+.footerList {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footerListTitle {
+    font-weight: 600;
+    font-size: 14px !important;
+}
+
+.footerList li {
+    color: #cfcfcf;
+    font-size: 12px;
+    margin: 20px 0px;
+}
+
+.footerList a {
+    color: #cfcfcf;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.locationMap iframe {
+    border: 4px solid var(--yellow);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.accucia {
+    color: #cfcfcf;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 10px 0px;
+    font-family: "Montserrat Bold";
+}
+
+.accucia a {
+    color: #cfcfcf;
+    font-size: 12px;
+    transition: .2s;
+}
+
+.accucia a:hover {
+    color: var(--yellow);
+    transition: .2s;
+    font-size: 12px;
+}
+
+.bottomFooter {
+    padding: 0px;
+    font-size: 12px;
+}
+
+.bottomFooter .float-start p {
+    color: #cfcfcf;
+    font-size: 12px;
+}
+
+.bottomFooter .float-end p {
+    color: #cfcfcf;
+    font-size: 12px;
+}
+
+.bottomFooter .float-end a img {
+    height: 35px !important
+}
+
+.mobShow {
+    display: none;
+}
+
+/* ---------------responsive css -----------------------*/
+@media (min-width: 320px) and (max-width: 567px) {
+    .bottomFooter{
+        float: left;
+}
+}
+

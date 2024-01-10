@@ -1,0 +1,443 @@
+<!--jQuery-->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Toaster-->
+<!-- <script src="./assets/plugins/toast/toastr.js" type="text/javascript"></script> -->
+<!-- <script src="./assets/plugins/toast/toaster.min.js" type="text/javascript"></script> -->
+<script src="../assets/plugins/toast/vanillatoasts.js" type="text/javascript"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script> -->
+<!-- <script src="../assets/js/instafeedjsfile/instafeed.min.js"></script> -->
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"
+    integrity="sha512-oVbWSv2O4y1UzvExJMHaHcaib4wsBMS5tEP3/YkMP6GmkwRJAa79Jwsv+Y/w7w2Vb/98/Xhvck10LyJweB8Jsw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    #whatsapplottie {
+        /* margin: 0 0 25px 0 !important; */
+        padding-left: 0px;
+        padding-right: 0px;
+        position: fixed !important;
+        z-index: 16000160 !important;
+        bottom: 2px !important;
+        left: 0px !important;
+        text-align: center !important;
+        height: 100px;
+        min-width: 47px;
+        border-radius: 25px;
+        visibility: visible;
+        transition: none !important;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<!-- <div class="whats_app_icon">
+    <a href="https://wa.me/917272959525?text=Hello%20from%20AdBanao%20Web">
+        <img src="/img/home_page/whatsapp_icons.png " alt="whatsapp"  class="whatsapp_link_img">
+    </a> 
+</div> -->
+
+<div>
+    <a href="https://wa.me/917272959525?text=Hello%20from%20AdBanao%20Web">
+        <!-- <img src="/img/home_page/whatsapp_icons.png " alt="whatsapp"  class="whatsapp_link_img"> -->
+        <div id="whatsapplottie"></div>
+    </a>
+</div>
+
+
+
+<!-- <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        target: "instafeed-container",
+        resolution: 'low_resolution',
+        accessToken: 'IGQVJYZA0plWGNqbndrSGtTa1BOUFFlMzJYdVl6ZAkZAvem10V3dfaFVOYUlIaFl4NUpXSzIwMkdhZAmJfU25ETG5BMnphOWRhalJJUG9Ya01ZAb0VJX3NrN2VMSXdJb2toRzUydlRQRHpRRmtOa3AzTlN2VgZDZD'
+    });
+    userFeed.run();
+</script> -->
+
+</script>
+<!--Popper js-->
+<script src="../js/popper.min.js"></script>
+<!-- <script src="./js/popper.min.js"></script> -->
+<!--Bootstrap js-->
+<script src="../js/bootstrap.min.js"></script>
+<!--Magnific popup js-->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!--jquery easing js-->
+<script src="/js/jquery.easing.min.js"></script>
+<!--wow js-->
+<script src="/js/wow.min.js"></script>
+<!--owl carousel js-->
+<script src="/js/owl.carousel.min.js"></script>
+<!--countdown js-->
+<script src="/js/jquery.countdown.min.js"></script>
+<!--validator js-->
+<script src="/js/validator.min.js"></script>
+<!-- Tilt Js -->
+<script src="../assets/plugins/tilt/tilt.jquery.min.js"></script>
+<!-- Lottie Js -->
+<!-- <script src="../assets/plugins/lottie/lottie.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Swiper Carousel -->
+<script src="../assets/plugins/swiper/swiper-bundle.min.js"></script>
+<!-- AOS -->
+<script src="../assets/plugins/AOS/aos.js"></script>
+<!--custom js-->
+<script src="/js/scripts.js"></script>
+  
+<!-- Main Js -->
+<script src="../assets/js/main.js"></script>
+<!-- <script src="../assets/js/main-mini.js"></script> -->
+
+
+<!-- <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script> -->
+<!-- <script src="../assets/js/instafeedjsfile/instafeed.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- <script src="jquery.countup.min.js"></script> -->
+<!-- on scroll page load plugin link -->
+<script src="/assets/plugins/Detect-Elements-In-Viewport-jQuery-Visible/jquery.visible.min.js"></script>
+
+<script>
+
+
+
+
+    var params = {
+        container: document.getElementById('bannerBackgroundAnimation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/animations/blob.json'
+    };
+    lottie.loadAnimation(params);
+
+    var params1 = {
+        container: document.getElementById('particleBg'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/animations/particle.json'
+    };
+    lottie.loadAnimation(params1);
+
+    var params2 = {
+        container: document.getElementById('screen1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/animations/slide1.json'
+    };
+    lottie.loadAnimation(params2);
+
+    var params3 = {
+        container: document.getElementById('screen2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/animations/slide2.json'
+    };
+    lottie.loadAnimation(params3);
+
+    var params4 = {
+        container: document.getElementById('screen3'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/animations/slide3.json'
+    };
+    lottie.loadAnimation(params4);
+
+    var slidesCount = $(".lottieAnimatioCarousel div").length - 1;
+    var initialCount = 0;
+
+    var time = 0;
+    if (initialCount == 0) {
+        time = 12000;
+    }
+    if (initialCount == 1) {
+        time = 13000;
+    }
+    else if (initialCount == 2) {
+        time = 8000;
+    }
+
+
+    setInterval(function () {
+        $(".lottieAnimatioCarousel div").hide();
+        var selector = $(".lottieAnimatioCarousel div")[initialCount];
+
+        $(selector).fadeIn();
+        if (initialCount == slidesCount) {
+            initialCount = 1;
+        } else {
+            initialCount++;
+            // time = 0
+        }
+    }, time);
+
+
+    // lottie animation for category
+
+
+    $(".twitterBtn1").click(function () {
+        $(".sidepanelBlocks").css({
+            "margin-right": "0px"
+        })
+        $("#youtubeContainer").hide();
+        $("#twitterContainer").show();
+        $("#facebookContainer").hide();
+        $("#instagramContainer").hide();
+    });
+    $(".youtubeBtn1").click(function () {
+        $(".sidepanelBlocks").css({
+            "margin-right": "0px"
+        })
+        $("#youtubeContainer").show();
+        $("#twitterContainer").hide();
+        $("#facebookContainer").hide();
+        $("#instagramContainer").hide();
+    });
+
+    $(".fbBtn").click(function () {
+        $(".sidepanelBlocks").css({
+            "margin-right": "0px"
+        })
+        $("#youtubeContainer").hide();
+        $("#twitterContainer").hide();
+        $("#instagramContainer").hide();
+        $("#facebookContainer").show();
+    });
+
+    $(".instaBtn").click(function () {
+        $(".sidepanelBlocks").css({
+            "margin-right": "0px"
+        })
+        $("#youtubeContainer").hide();
+        $("#twitterContainer").hide();
+        $("#instagramContainer").show();
+        $("#facebookContainer").hide();
+    });
+
+    $("#closeSidepanel").click(function () {
+        $(".sidepanelBlocks").css({
+            "margin-right": "-300px"
+        })
+    });
+
+    // $("#industries").hover(function(){
+    //     $("#industryDropdown").removeClass('d-none');
+    //     $("#eventsDropdownMenu").addClass('d-none');
+    // })
+    // $("#industries").hover(function(){
+    //     $("#industryDropdown").removeClass('d-none');
+    // })
+
+    $("#eventDropdown").hover(function () {
+        // $("#eventsDropdownMenu").removeClass('d-none');
+        $("#industryDropdown").addClass('d-none');
+    })
+
+    $("#homeAnchor,#pricingAnchor,#blogAnchor,#loginAnchor").hover(function () {
+        $("#industryDropdown").addClass('d-none');
+        $(".eventsDropdownMenu").addClass('d-none');
+    })
+    // $("#homeAnchor,#pricingAnchor,#blogAnchor,#loginAnchor","#industryDropdown").hover(function(){
+    //     $("#eventsDropdownMenu").addClass('d-none');
+    // })
+
+    // $("#pricing").hover(function(){
+    //     $("#industryDropdown").removeClass('d-none');
+    //     $("#eventsDropdownMenu").removeClass('d-none');
+    // })
+    // $("#blogs").hover(function(){
+    //     $("#industryDropdown").removeClass('d-none');
+    //     $("#eventsDropdownMenu").removeClass('d-none');
+    // })
+    // $("#loginAnchor").hover(function(){
+    //     $("#industryDropdown").removeClass('d-none');
+    //     $("#eventsDropdownMenu").removeClass('d-none');
+    // })
+
+
+
+
+
+    $("#industries").click(function () {
+
+        if ($("#industryDropdown").hasClass('d-none')) {
+            $("#industryDropdown").removeClass('d-none').addClass('d-sm-none d-lg-block')
+        } else {
+            $("#industryDropdown").addClass('d-none').removeClass('d-sm-none d-lg-block')
+        }
+        $("#eventsDropdownMenu").addClass('d-none').removeClass('d-sm-none d-lg-block');
+        // window.location.href = "/republic-event"
+        // window.location.href = "/industry"
+
+    })
+
+    $("#eventDropdown").click(function () {
+        if ($("#eventsDropdownMenu").hasClass('d-none')) {
+            $("#eventsDropdownMenu").removeClass('d-none').addClass('d-sm-none d-lg-block')
+        } else {
+            $("#eventsDropdownMenu").addClass('d-none').removeClass('d-sm-none d-lg-block')
+        }
+        $("#industryDropdown").addClass('d-none').removeClass('d-sm-none d-lg-block')
+    })
+
+
+    $("#eventsDropdownMenu").mouseleave(function () {
+        $(this).addClass('d-none').removeClass('d-sm-none d-lg-block')
+    })
+
+    $("#industryDropdown").mouseleave(function () {
+        $(this).addClass('d-none').removeClass('d-sm-none d-lg-block')
+
+    })
+
+    // var userFeed = new Instafeed({
+    // 	get: 'user',
+    // 	target: "instagramContainer",
+    // 	resolution: 'low_resolution',
+    //     template: `<a href="{{link}}"><img style="height:100px; width:100px" title="{{caption}}" src="{{image}}" /></a>`,
+    // 	accessToken: 'IGQVJYZA0plWGNqbndrSGtTa1BOUFFlMzJYdVl6ZAkZAvem10V3dfaFVOYUlIaFl4NUpXSzIwMkdhZAmJfU25ETG5BMnphOWRhalJJUG9Ya01ZAb0VJX3NrN2VMSXdJb2toRzUydlRQRHpRRmtOa3AzTlN2VgZDZD'
+    // });
+    // userFeed.run();
+    // console.log(userFeed)
+
+    //Function to hide the preloader
+    // function hidePreloader() {
+    //     var preloader = document.getElementById('preloader');
+    //     preloader.style.display = 'none';
+    // }
+
+    // // Attach event listener to wait for content to load
+    // window.addEventListener('load', function () {
+    //     // Add a delay of 1 second (1000 milliseconds) before hiding the preloader
+    //     setTimeout(hidePreloader, 2000);
+    // });
+
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '679952070085559',
+            xfbml: true,
+            version: 'v12.0'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+</script>
+
+<!-- for carasoul_branding_Post -->
+
+<!-- for wati -->
+<!-- <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?75477';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+        "enabled": true,
+        "chatButtonSetting": {
+            "backgroundColor": "#4dc247",
+            "ctaText": "",
+            "borderRadius": "25",
+            "marginLeft": "25",
+            "marginBottom": "25",
+            "marginRight": "50",
+            "position": "left"
+        },
+        "brandSetting": {
+            "brandName": "WATI",
+            "brandSubTitle": "Typically replies within a day",
+            "brandImg": "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+            "welcomeText": "Hi there!\nHow can I help you?",
+            "messageText": "Hello, I have a question about {{page_link}}",
+            "backgroundColor": "#0a5f54",
+            "ctaText": "Start Chat",
+            "borderRadius": "25",
+            "autoShow": false,
+            "phoneNumber": "8698544298"
+        }
+    };
+    s.onload = function () {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script> -->
+
+
+<script>
+    const node_url = "<%= process.env.NODE_API_URL%>"
+    const base_url = "<%= process.env.BASE_URL%>"
+    const blog_url = "<%= process.env.BLOG_URL%>"
+</script>
+
+<script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('whatsapplottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/js/whatsapp.json'
+    });
+</script>
+
+<!-- <script>
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var link = document.querySelectorAll(".downloadFreePost");
+
+    link.forEach((item) => {
+        if (!isMobile) {
+            // console.log("for desktop")
+
+            item.href = "https://play.google.com/store/apps/details?id=com.adbanao&hl=en_IN&gl=US";
+        }else{
+            item.href="https://web.adbanao.com/"
+        }
+    })
+
+</script> -->
+<!-- Meta Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '699201688876412');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=699201688876412&ev=PageView&noscript=1" /></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- microsoft clarity - heatmap . smart look wala remove karege.  -->
+<script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "hmq25o59mm");
+</script>
